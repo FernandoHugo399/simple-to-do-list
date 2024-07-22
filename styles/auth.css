@@ -1,0 +1,41 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+	height: 100%;
+}
+
+.flex-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.flex-container .left-side {
+    width: 60%;
+    height: 100%;
+    background-color: #4677F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+}
+
+.left-side #logo {
+    background-image: url("/assets/images/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 110px;
+}
+
+.flex-container .right-side {
+    width: 40%;
+    height: 100%;
+}
+
+
