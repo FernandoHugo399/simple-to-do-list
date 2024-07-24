@@ -5,9 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
     <link href="/styles/auth.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
-    <title>To do list</title>
+    <title>To do List</title>
 </head>
 <body>
-    <h1>Olá mundo!</h1>
+    <section class="flex-container">
+        <div class="left-side">
+            <div class="logo">
+                <a href="/pages/index.html">
+                    <img src="/assets/images/logo.png" alt="logo">
+                </a>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <div class="logo">
+                <a href="/pages/index.html">
+                    <img src="/assets/images/logo.png" alt="logo">
+                </a>
+            </div>
+
+            <form>
+                <div class="top-side">
+                    <h2>Cadastro</h2>
+                    <input class="margin-top-20" type="text" name="email" placeholder="Email">
+                    <input class="margin-top-20" type="password" name="password" placeholder="Senha">
+                    <input class="margin-top-20" type="password" name="password2" placeholder="Confirmar senha">
+                </div>
+
+                <div class="bottom-side">
+                    <input type="button" value="Login">
+                    <span>Possui uma conta?<a href="/pages/login.html">Faça login!</a></span>
+                </div>
+            </form>
+        </div>
+    </section>
 </body>
 </html>

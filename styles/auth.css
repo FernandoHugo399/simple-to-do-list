@@ -31,16 +31,24 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 5%;
+    padding: 0 3%;
 }
 
 .flex-container .logo {
-    background-image: url("/assets/images/logo.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
     width: 100%;
-    height: 110px;
+    max-width: 280px;
+    height: auto;
+}
+
+.flex-container .logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.flex-container .logo a img {
+    width: 100%;
+    height: 100%;
 }
 
 .flex-container .right-side .logo {
@@ -56,7 +64,7 @@ html,body{
     align-items: center;
     justify-content: center;
     min-width: 300px;
-    padding: 0 5%;
+    padding: 0 3%;
 }
 
 .right-side form {
@@ -87,6 +95,10 @@ html,body{
     outline: none;
     border-radius: 8px;
     border: 1px solid rgba(0, 0, 0, 0.500);
+}
+
+.right-side form .margin-top-20 {
+    margin-top: 20px;
 }
 
 .right-side form .top-side span {
