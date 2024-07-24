@@ -47,3 +47,67 @@ header a {
 header a img {
 	width: 100%;
 }
+
+.container {
+	width: 100%;
+	height: calc(100% - 60px);
+	padding: 0 5%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main {
+	width: 100%;
+	height: 80%;
+	border-radius: 30px;
+	border: 4px solid rgba(204, 204, 204, 0.25);
+	box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.25);
+    border-radius: 30px;
+	padding: 30px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+main .upper-side {
+	width: 100%;
+	height: auto;
+}
+
+main .upper-side h2 {
+	width: 100%;
+	font-size: 24px;
+	margin-bottom: 30px;
+}
+
+main .upper-side .task-list {
+	background-color: #ccc;
+	width: 100%;
+	height: auto;
+}
+
+main .bottom-side {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+}
+
+main .add-task {
+	width: 100%;
+	max-width: 170px;
+	padding: 17px 12px;
+	background-color: #4677F6;
+    color: white;
+    border: 2px solid #2257E0;
+	border-radius: 8px;
+    transition: 0.2s;
+}
+
+main .add-task:hover {
+    background-color: #2257E0;
+    cursor: pointer;
+}
