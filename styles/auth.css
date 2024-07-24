@@ -123,6 +123,7 @@ html,body{
 
 .right-side form .bottom-side input:hover {
     background-color: #2257E0;
+    cursor: pointer;
 }
 
 .right-side form .bottom-side span {
