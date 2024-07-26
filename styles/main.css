@@ -50,16 +50,16 @@ header a img {
 
 .container {
 	width: 100%;
-	height: calc(100% - 60px);
-	padding: 0 5%;
+	height: fit-content;
+	padding: 30px 5%;
 	display: flex;
-	align-items: center;
 	justify-content: center;
 }
 
 main {
 	width: 100%;
-	height: 80%;
+	min-height: 80vh;
+	height: auto;
 	border-radius: 30px;
 	border: 4px solid rgba(204, 204, 204, 0.25);
 	box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.25);
@@ -83,10 +83,57 @@ main .upper-side h2 {
 	margin-bottom: 30px;
 }
 
-main .upper-side .task-list {
-	background-color: #ccc;
+main .upper-side .center-task-list {
 	width: 100%;
-	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main .upper-side .task-list {
+	width: 90%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 20px;
+}
+
+
+.upper-side .task-list .task {
+	width: auto;
+	border: 1px solid #ccc;
+	padding: 10px 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 18px;
+}
+
+.task-list .task .icons {
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+	align-items: center;
+}
+
+.task-list .task .icons .icon {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	background-position: center;
+	background-size: cover;
+}
+
+.task-list .task .icons .done {
+	background-image: url(/assets/images/completed-icon.png);
+}
+
+.task-list .task .icons .edit {
+	background-image: url(/assets/images/edit-icon.png);
+}
+
+.task-list .task .icons .delete {
+	background-image: url(/assets/images/trash-icon.png);
 }
 
 main .bottom-side {
@@ -97,6 +144,7 @@ main .bottom-side {
 }
 
 main .add-task {
+	margin-top: 20px;
 	width: 100%;
 	max-width: 170px;
 	padding: 17px 12px;
@@ -110,4 +158,10 @@ main .add-task {
 main .add-task:hover {
     background-color: #2257E0;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+	main .bottom-side {
+		justify-content: center;
+	}
 }
