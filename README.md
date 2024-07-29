@@ -3,7 +3,7 @@ Este projeto se trata de uma **lista de tarefas simples**. Tem como finalidade i
 
 Possui ao todo 3 páginas: **home**, **login** e **cadastro**. As páginas de login e cadastro são estáticas, ou seja, não tem integração com nenhum outro serviço ou lógica por trás do código. Já a página home é possível realizar operações **CRUD (leitura, criação, edição e remoção de dados)**. É possível, visualizar, adicionar, editar e remover tarefas de uma lista.
 
-Esta é apenas a versão inicial de um projeto que será desenvolvido em breve com ferramentas sofisticadas.
+Esta é apenas a versão inicial de um projeto que será desenvolvido **em breve** com ferramentas sofisticadas.
 
 ## Páginas
 ### Página de login
@@ -27,4 +27,4 @@ Esta é apenas a versão inicial de um projeto que será desenvolvido em breve c
 ## Adicionais
 - A branch **master** contém a versão final da aplicação;
 - A branch **comentarios** apresenta a versão comentada da aplicação;
-- Você pode utilizar este projeto para qualquer finalidade.
+- Você pode utilizar este projeto para **qualquer finalidade**.
