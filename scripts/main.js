@@ -1,18 +1,16 @@
-let tasks = [
-    { text: "Lorem ipsum", done: false },
-    { text: "Lorem ipsum dolor sit amet", done: false },
-    { text: "Lorem ipsum dolor sit amet", done: false },
-    { text: "Lorem ipsum sit amet", done: false },
-    { text: "Lorem ipsum", done: false },
-    { text: "Lorem ipsum sit amet", done: false },
-    { text: "Lorem ipsum", done: false },
-    { text: "Lorem ipsum", done: false },
-    { text: "Lorem ipsum", done: false }
-];
+let tasks = [ ];
 
 function renderTasks() {
     const taskList = document.querySelector('.task-list');
     taskList.innerHTML = '';
+
+    if(tasks.length == 0) {
+        const message = document.createElement('p');
+        message.textContent = "Nenhuma tarefa encontrada";
+        taskList.appendChild(message)
+        return;
+    }
+
     tasks.forEach((task, index) => {
         const taskDiv = document.createElement('div');
         taskDiv.classList.add('task');

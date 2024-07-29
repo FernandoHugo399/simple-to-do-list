@@ -98,6 +98,9 @@ main .upper-side .task-list {
 	gap: 20px;
 }
 
+.upper-side .task-list > p {
+	font-weight: bold;
+}
 
 .upper-side .task-list .task {
 	width: auto;
@@ -107,6 +110,10 @@ main .upper-side .task-list {
 	justify-content: space-between;
 	align-items: center;
 	gap: 18px;
+}
+
+.upper-side .task-list > .done {
+	display: none;
 }
 
 .task-list .task .icons {
