@@ -25,6 +25,6 @@ Esta é apenas a versão inicial de um projeto que será desenvolvido em breve c
 </p>
 
 ## Adicionais
-- A branch master contém a versão final da aplicação;
-- A branch comentario apresenta a versão comentada da aplicação;
+- A branch **master** contém a versão final da aplicação;
+- A branch **comentarios** apresenta a versão comentada da aplicação;
 - Você pode utilizar este projeto para qualquer finalidade.
