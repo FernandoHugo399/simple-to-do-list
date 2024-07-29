@@ -1,164 +1,173 @@
+/* Definição do charset */
 @charset "UTF-8";
 
+/* Importação da fonte Roboto */
 @font-face {
     font-family: 'Roboto';
     src: url("/assets/fonts/Roboto/Roboto-Regular.ttf");
 }
 
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-weight: normal;
     font-family: 'Roboto', 'Courier New', Courier, monospace;
 }
 
-html,body{
-	height: 100%;
+html, body {
+    height: 100%;
 }
 
+/* Estilos para o cabeçalho */
 header {
-	width: 100%;
-	height: 60px;
-	background-color: #4677F6;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 5px 5%;
+    width: 100%;
+    height: 60px;
+    background-color: #4677F6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 5%;
 }
 
 header .logo {
-	width: 100%;
-	max-width: 90px;
-	height: auto;
+    width: 100%;
+    max-width: 90px;
+    height: auto;
 }
 
 header .log-out {
-	width: 100%;
-	max-width: 87px;
-	height: auto;
+    width: 100%;
+    max-width: 87px;
+    height: auto;
 }
 
 header a {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 header a img {
-	width: 100%;
+    width: 100%;
 }
 
+/* Estilos para o contêiner principal */
 .container {
-	width: 100%;
-	height: fit-content;
-	padding: 30px 5%;
-	display: flex;
-	justify-content: center;
+    width: 100%;
+    height: fit-content;
+    padding: 30px 5%;
+    display: flex;
+    justify-content: center;
 }
 
+/* Estilos para o elemento main */
 main {
-	width: 100%;
-	min-height: 80vh;
-	height: auto;
-	border-radius: 30px;
-	border: 4px solid rgba(204, 204, 204, 0.25);
-	box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.25);
-    -webkit-box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.25);
+    width: 100%;
+    min-height: 80vh;
+    height: auto;
     border-radius: 30px;
-	padding: 30px 20px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+    border: 4px solid rgba(204, 204, 204, 0.25);
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+/* Estilos para a seção superior do main */
 main .upper-side {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
 }
 
 main .upper-side h2 {
-	width: 100%;
-	font-size: 24px;
-	margin-bottom: 30px;
+    width: 100%;
+    font-size: 24px;
+    margin-bottom: 30px;
 }
 
 main .upper-side .center-task-list {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 main .upper-side .task-list {
-	width: 90%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	gap: 20px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
 }
 
 .upper-side .task-list > p {
-	font-weight: bold;
+    font-weight: bold;
 }
 
+/* Estilos para cada tarefa na lista */
 .upper-side .task-list .task {
-	width: auto;
-	border: 1px solid #ccc;
-	padding: 10px 10px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	gap: 18px;
+    width: auto;
+    border: 1px solid #ccc;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
 }
 
 .upper-side .task-list > .done {
-	display: none;
+    display: none;
 }
 
+/* Estilos para os ícones das tarefas */
 .task-list .task .icons {
-	display: flex;
-	justify-content: space-between;
-	gap: 10px;
-	align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
 }
 
 .task-list .task .icons .icon {
-	width: 30px;
-	height: 30px;
-	cursor: pointer;
-	background-position: center;
-	background-size: cover;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
 }
 
 .task-list .task .icons .done {
-	background-image: url(/assets/images/completed-icon.png);
+    background-image: url(/assets/images/completed-icon.png);
 }
 
 .task-list .task .icons .edit {
-	background-image: url(/assets/images/edit-icon.png);
+    background-image: url(/assets/images/edit-icon.png);
 }
 
 .task-list .task .icons .delete {
-	background-image: url(/assets/images/trash-icon.png);
+    background-image: url(/assets/images/trash-icon.png);
 }
 
+/* Estilos para a seção inferior do main */
 main .bottom-side {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: start;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
 }
 
 main .add-task {
-	margin-top: 20px;
-	width: 100%;
-	max-width: 170px;
-	padding: 17px 12px;
-	background-color: #4677F6;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 170px;
+    padding: 17px 12px;
+    background-color: #4677F6;
     color: white;
     border: 2px solid #2257E0;
-	border-radius: 8px;
+    border-radius: 8px;
     transition: 0.2s;
 }
 
@@ -167,8 +176,9 @@ main .add-task:hover {
     cursor: pointer;
 }
 
+/* Estilos responsivos para dispositivos menores */
 @media (max-width: 768px) {
-	main .bottom-side {
-		justify-content: center;
-	}
+    main .bottom-side {
+        justify-content: center;
+    }
 }

@@ -1,43 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Configurações de charset e viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
-    <link href="/styles/main.css" rel="stylesheet">
+
+    <!-- Link para o arquivo de estilos CSS -->
+    <link href="/styles/auth.css" rel="stylesheet">
+
+    <!-- Definição do favicon para a página -->
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
+
+    <!-- Título da página -->
     <title>To do List</title>
 </head>
 <body>
     
+    <!-- Cabeçalho -->
     <header>
         <div class="logo">
+            <!-- Link para a página inicial com o logo -->
             <a href="#">
                 <img src="/assets/images/logo.png" alt="logo">
             </a>
         </div>
 
         <div class="log-out">
+            <!-- Link para a página de login com o ícone de logout -->
             <a href="/pages/login.html">
-                <img src="/assets/images/log-out.png" alt="logo">
+                <img src="/assets/images/log-out.png" alt="logout">
             </a>
         </div>
     </header>
     
+    <!-- Conteúdo principal -->
     <div class="container">
         <main>
+            <!-- Seção superior: Título e lista de tarefas -->
             <div class="upper-side">
                 <h2>Lista de tarefas</h2>
                 <div class="center-task-list">
                     <section class="task-list">
+                        <!-- As tarefas serão inseridas aqui -->
                     </section>
                 </div>
             </div>
             
+            <!-- Seção inferior: Botão para adicionar tarefas -->
             <div class="bottom-side">
                 <button class="add-task">Adicionar tarefa</button>
             </div>
         </main>
     </div>
+
+    <!-- Inclusão do script JavaScript -->
+    <script src="/scripts/main.js"></script>
 </body>
-<script src="/scripts/main.js"></script>
 </html>

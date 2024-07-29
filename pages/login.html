@@ -1,38 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Configurações de charset e viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
+
+    <!-- Link para o arquivo de estilos CSS -->
     <link href="/styles/auth.css" rel="stylesheet">
+
+    <!-- Definição do favicon para a página -->
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
+
+    <!-- Título da página -->
     <title>To do List</title>
 </head>
 <body>
+    <!-- Seção principal do layout com contêiner flexível -->
     <section class="flex-container">
+        <!-- Lado esquerdo da página -->
         <div class="left-side">
             <div class="logo">
+                <!-- Link para a página inicial com o logo -->
                 <a href="/pages/index.html">
                     <img src="/assets/images/logo.png" alt="logo">
                 </a>
             </div>
         </div>
 
+        <!-- Lado direito da página com o formulário de login -->
         <div class="right-side">
             <div class="logo">
+                <!-- Link para a página inicial com o logo -->
                 <a href="/pages/index.html">
                     <img src="/assets/images/logo.png" alt="logo">
                 </a>
             </div>
+            <!-- Formulário de login -->
             <form>
                 <div class="top-side">
+                    <!-- Título do formulário -->
                     <h2>Login</h2>
+                    <!-- Campo para o email -->
                     <input type="text" name="email" placeholder="Email">
+                    <!-- Campo para a senha -->
                     <input type="password" name="password" placeholder="Senha">
+                    <!-- Link para recuperação de senha -->
                     <span><a href="#">Esqueceu a senha?</a></span>
                 </div>
 
                 <div class="bottom-side">
+                    <!-- Botão para realizar o login -->
                     <input type="button" value="Login">
+                    <!-- Link para a página de cadastro -->
                     <span>Não possui conta?<a href="/pages/cadastro.html">Cadastra-se!</a></span>
                 </div>
             </form>
