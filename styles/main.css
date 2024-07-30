@@ -1,13 +1,10 @@
-/* Definição do charset */
 @charset "UTF-8";
 
-/* Importação da fonte Roboto */
 @font-face {
     font-family: 'Roboto';
     src: url("/assets/fonts/Roboto/Roboto-Regular.ttf");
 }
 
-/* Estilos globais */
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +17,6 @@ html, body {
     height: 100%;
 }
 
-/* Estilos para o cabeçalho */
 header {
     width: 100%;
     height: 60px;
@@ -52,7 +48,6 @@ header a img {
     width: 100%;
 }
 
-/* Estilos para o contêiner principal */
 .container {
     width: 100%;
     height: fit-content;
@@ -61,7 +56,6 @@ header a img {
     justify-content: center;
 }
 
-/* Estilos para o elemento main */
 main {
     width: 100%;
     min-height: 80vh;
@@ -77,7 +71,6 @@ main {
     justify-content: space-between;
 }
 
-/* Estilos para a seção superior do main */
 main .upper-side {
     width: 100%;
     height: auto;
@@ -108,7 +101,6 @@ main .upper-side .task-list {
     font-weight: bold;
 }
 
-/* Estilos para cada tarefa na lista */
 .upper-side .task-list .task {
     width: auto;
     border: 1px solid #ccc;
@@ -123,7 +115,6 @@ main .upper-side .task-list {
     display: none;
 }
 
-/* Estilos para os ícones das tarefas */
 .task-list .task .icons {
     display: flex;
     justify-content: space-between;
@@ -151,7 +142,6 @@ main .upper-side .task-list {
     background-image: url(/assets/images/trash-icon.png);
 }
 
-/* Estilos para a seção inferior do main */
 main .bottom-side {
     width: 100%;
     display: flex;
@@ -176,7 +166,6 @@ main .add-task:hover {
     cursor: pointer;
 }
 
-/* Estilos responsivos para dispositivos menores */
 @media (max-width: 768px) {
     main .bottom-side {
         justify-content: center;
