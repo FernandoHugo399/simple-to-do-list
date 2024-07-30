@@ -2,24 +2,33 @@
 let tasks = [
     { text: "Lorem ipsum", done: false },
     { text: "Lorem ipsum dolor sit amet", done: false },
-    { text: "Lorem ipsum dolor sit amet", done: false },
+    { text: "Lorem ipsum dolor sit amet", done: false }
 ];
-
+    
 /**
  * Função para renderizar a lista de tarefas na tela.
  * Limpa a lista atual e adiciona as tarefas do array 'tasks'.
  */
 function renderTasks() {
-    // Seleciona o elemento com a classe 'task-list' onde as tarefas serão exibidas.
+    // Seleciona o elemento com a classe 'task-list', onde as tarefas serão exibidas.
     const taskList = document.querySelector('.task-list');
-    taskList.innerHTML = '';
+    taskList.innerHTML = ''; // Limpa o conteúdo atual da lista de tarefas.
 
-    // Se não houver tarefas, exibe uma mensagem indicando que não há tarefas encontradas.
-    if(tasks.length == 0) {
+    let contador = 0; // Contador para tarefas que não estão concluídas.
+
+    // Conta o número de tarefas que não estão concluídas.
+    tasks.forEach((task) => {
+        if (task.done == false) {
+            contador++;
+        }
+    });
+
+    // Se não houver tarefas em andamento, exibe uma mensagem informando isso.
+    if (contador == 0) {
         const message = document.createElement('p');
-        message.textContent = "Nenhuma tarefa encontrada";
-        taskList.appendChild(message);
-        return;
+        message.textContent = "Nenhuma tarefa em andamento encontrada"; // Mensagem exibida quando não há tarefas pendentes.
+        taskList.appendChild(message); // Adiciona a mensagem ao elemento da lista de tarefas.
+        return; // Sai da função se não houver tarefas em andamento.
     }
 
     // Para cada tarefa no array 'tasks', cria os elementos HTML correspondentes.
@@ -64,7 +73,7 @@ function renderTasks() {
  * Pede ao usuário para digitar a tarefa e adiciona ao array 'tasks'.
  */
 function addTask() {
-    const taskText = prompt('Digite a tarefa:');
+    const taskText = prompt('Digite a tarefa:'); // Pede ao usuário para digitar o texto da tarefa.
     if (taskText) {
         tasks.push({ text: taskText, done: false }); // Adiciona a nova tarefa ao array 'tasks'.
         renderTasks(); // Atualiza a lista de tarefas exibida.
